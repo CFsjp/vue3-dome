@@ -16,7 +16,7 @@
 <script>
 export default {
   mounted() {
-    console.log("当前环境是：" ,process.env.NODE_ENV);
+    console.log("当前环境是：" + process.env.NODE_ENV);
   },
   methods: {
     // 切换语言
