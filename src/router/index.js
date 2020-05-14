@@ -1,5 +1,5 @@
 /**
- * 路由配置
+ * 路由配置(主路由直接引入，其他路由必须懒加载)
  */
 import Vue from 'vue';
 import Router from 'vue-router';
@@ -7,9 +7,7 @@ import Router from 'vue-router';
 // 主容器组件
 import Layout from '../layout';
 
-// 子页面组件
-import DashBoard from '@/views/dashboard';
-
+const Dashboard = ()=>import("@/views/dashboard")
 // 路由集合
 const routes = [
   {
@@ -21,7 +19,7 @@ const routes = [
       {
         path: '/dashboard',
         name: 'dashboard',
-        component: DashBoard
+        component: Dashboard
       }
     ]
   },

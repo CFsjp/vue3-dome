@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import Header from './header.vue';
-import Navbar from './navbar.vue';
-
+// 组件懒加载
+const Header = ()=>import("./header.vue");
+const Navbar = ()=>import("./navbar.vue");
 export default {
   name: 'layout',
   components: {
