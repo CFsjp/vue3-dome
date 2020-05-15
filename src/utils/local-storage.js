@@ -81,3 +81,4 @@ function clearLocalData(name) {
   localStorage.removeItem(name);
 }
 /* eslint-disable */
+

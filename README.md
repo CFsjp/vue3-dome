@@ -2,7 +2,7 @@
 
 [TOC]
 
-Vue 集成开发环境
+Vue 集成开发环境。
 
 > 参考资料：
 >
@@ -54,7 +54,7 @@ vue-integrate
   - .svnignore - svn 忽略文件
   - .babel.config.js - babel 编译配置文件
   - jest.config.js - jest 测试配置文件
-  - perttier.config.js - perttier 配置文件
+  - perttier.config.js - perttier 代码格式化配置文件
   - vue.config.js - vue-cli 的配置文件
 ```
 

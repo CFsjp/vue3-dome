@@ -16,7 +16,6 @@ const modules = getAllModules(require.context('./modules', true, /\.js$/));
 
 // 开发模式 debug
 const debug = process.env.NODE_ENV !== 'production';
-
 const store = new Vuex.Store({
   modules,
   strict: debug,

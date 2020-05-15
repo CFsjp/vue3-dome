@@ -1,25 +1,26 @@
 <template>
   <div>
     <h3>dashboard page</h3>
-    <el-button type="primary" size="midel" @click.stop="getdata">
+    <el-button type="primary" size="midel" @click="getdata">
       getData
     </el-button>
   </div>
 </template>
 
 <script>
-import { example } from '@/api/example';
-
+import { get } from 'api/index';
 export default {
   methods: {
-    getdata() {
-      //  let _this = this;
-      example({}).then((res) => {
-        console.log(res);
-      });
+    async getdata() {
+      const url = '1.json';
+      const params = { code: 200, name: 'chengfeng' };
+      const res = await get(url, params);
+      console.log(res);
     }
   },
-  mounted() {}
+  mounted() {
+    this.getdata();
+  }
 };
 </script>
 <style lang="scss" scoped></style>

@@ -20,4 +20,3 @@ export function getAllModules(requireContext) {
 function importAll(r, callback = r) {
   r.keys().forEach(callback);
 }
-/* eslint-disable */

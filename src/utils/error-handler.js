@@ -74,3 +74,5 @@ function formatterMessage(msg) {
   msg = msg.length > 80 ? msg.slice(0, 80) + '...' : msg;
   return msg;
 }
+/* eslint-disable */
+

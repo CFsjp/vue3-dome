@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import store from './store';
+import store from './store/index';
 import router from './router';
 import i18n from './i18n/index';
 // 全局组件

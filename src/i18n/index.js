@@ -5,9 +5,9 @@ Vue.use(VueI18n);
 // 引入各个语言配置文件;
 import zh from './languages/zh-CN';
 import en from './languages/en-EN';
-
+import store from '@/store';
 const i18n = new VueI18n({
-  locale: 'zh', // 默认中文
+  locale: store.state.language.language, // 默认中文
   // 添加多语言
   messages: {
     zh,

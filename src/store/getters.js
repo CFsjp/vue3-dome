@@ -5,7 +5,8 @@
  */
 const getters = {
   // 返回设备信息
-  device: (state) => state.app.device
+  device: (state) => state.app.device,
+  language: (state) => state.language.language
 };
 
 export default getters;

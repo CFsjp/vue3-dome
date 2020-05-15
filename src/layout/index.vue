@@ -17,8 +17,8 @@
 
 <script>
 // 组件懒加载
-const Header = ()=>import("./header.vue");
-const Navbar = ()=>import("./navbar.vue");
+const Header = () => import('./header.vue');
+const Navbar = () => import('./navbar.vue');
 export default {
   name: 'layout',
   components: {

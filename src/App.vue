@@ -1,6 +1,8 @@
 <template>
-  <div id="app" class="full-height">
-    <router-view></router-view>
+  <div>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 

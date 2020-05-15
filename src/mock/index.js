@@ -18,7 +18,7 @@ for (let key in modules) {
 }
 
 // eslint-disable-next-line
-console.log(`生成的 mock 数据有：\n${mockList.map((item) => item.url).join()}`);
+// console.log(`生成的 mock 数据有：\n${mockList.map((item) => item.url).join()}`);
 
 // 配置请求返回的时间
 Mock.setup({
