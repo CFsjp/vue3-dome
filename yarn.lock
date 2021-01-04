@@ -11092,11 +11092,6 @@ vue@^3.0.0:
     "@vue/runtime-dom" "3.0.5"
     "@vue/shared" "3.0.5"
 
-vuex-composition-helpers@^1.0.22:
-  version "1.0.22"
-  resolved "https://registry.npm.taobao.org/vuex-composition-helpers/download/vuex-composition-helpers-1.0.22.tgz#3ae954194dfeb1955113d65f92413e14cc373fcf"
-  integrity sha1-OulUGU3+sZVRE9ZfkkE+FMw3P88=
-
 vuex@^4.0.0-0:
   version "4.0.0-rc.2"
   resolved "https://registry.npm.taobao.org/vuex/download/vuex-4.0.0-rc.2.tgz?cache=0&sync_timestamp=1606318199388&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuex%2Fdownload%2Fvuex-4.0.0-rc.2.tgz#3681c84eb6f5171b039edaa17cc78105e20724f3"
