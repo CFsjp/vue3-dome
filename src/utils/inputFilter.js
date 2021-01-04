@@ -2,7 +2,7 @@
  * input输入限制文件
  */
 import { debounce } from './public'
-import { Message } from 'element-ui'
+import { Message } from 'element-plus'
 
 const addListener = function(el, type, fn) {
   el.addEventListener(type, fn, false)
