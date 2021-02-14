@@ -12,12 +12,12 @@ arrayFunc.forEach(method => {
   }
 })
 
-function observer (target) {
+function observer(target) {
   if (typeof target !== 'object' || target === null) {
     return target
   }
 
-  if(Array.isArray(target)) {
+  if (Array.isArray(target)) {
     // 数组函数劫持后，将对象实例指向新的实例上去
     Object.setPrototypeOf(target, proto)
     // target.__proto__ = proto
@@ -28,7 +28,7 @@ function observer (target) {
   }
 }
 
-function defineReactive (target, key, value) {
+function defineReactive(target, key, value) {
   observer(value) // value是对象，则使用递归
   Object.defineProperty(target, key, {
     get() {
@@ -44,6 +44,6 @@ function defineReactive (target, key, value) {
   })
 }
 
-function updateView () {
+function updateView() {
   console.log('更新视图')
 }
